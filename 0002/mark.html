@@ -1,0 +1,169 @@
+<html>
+<!--    //-->
+  
+   
+   
+   <head>
+      <title>AlevelMathsC13</title>
+   
+   
+<style>
+body {
+  margin: 1px;
+}
+
+body { 
+background-image: url(lrock059.jpg);
+no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+ 
+}
+
+ .highlight { 
+	background-color: #FF00FF;
+	color: #FFFFFF;
+} 
+
+
+div.search span,
+div.search input[name="keyword"] {
+  display: block;
+}
+
+div.search input[name="keyword"] {
+  margin-top: 4px;
+}
+
+mark {
+  padding: 0;
+  background: #003F7D;
+  color: #fff;  
+}
+
+
+</style>   
+   
+   
+   
+   
+   </head>
+
+   <body>
+      
+<div class="context1">
+
+<p>the best</p>
+<p>the best</p>
+
+</div>
+	  
+	  <div style = "width:100%">
+		
+         <div  style = "background-color:#b5dcb3; width:100%">
+            <h1> This is Web Page Main title </h1>
+			
+			
+			<input style = "visibility:hidden; type="button" value="Nexdfsdfsdfsdfsdfsdfsdft">
+			<input type="button" value="Next" onclick = "myFunction()">			
+			<input type="button" value="Prev" onclick = "myFunction()">
+			
+			
+         </div>
+		 
+
+			
+         <div style = "background-color:#1d1d1d; height:600px; width:50%; float:left;">
+            <div><b>Main Menu</b></div>
+			<center>
+			  <img id="image1" src="0002/0p.png" alt="Italian Trulli">
+            </center>
+		 </div>
+			
+
+		
+         <div   style = "background-color:#aaa; height:600px; width:50%; float:right;">     
+  		    
+			<iframe  id="iframe1" src="test3.html" height="50%" width="100%" title="iframe1" name="iframe1"></iframe>
+			<p> this is an example </p>
+
+		 </div>
+			
+         <div style = "background-color:#b5dcb3; clear:both">
+            <center>
+			<input type="text" name="keyword" class="form-control input-sm" placeholder="Lorem ipsum...">
+               Copyright © 2021 BookBuddi.com
+            </center>
+         </div>
+			
+      </div>
+	  
+	  
+	  
+<script src="dist/mark.js"></script>
+<script>
+// Create an instance of mark.js and pass an argument containing
+// the DOM object of the context (where to search for matches)
+
+
+
+var mEl1=document.querySelector(".context1");
+//var mEl1=document.getElementById("iframe1");
+var markInstance = new Mark(mEl1);
+// Cache DOM elements
+//var keywordInput = document.querySelector("input[name='keyword']"); //if use kb input
+//var optionInputs = document.querySelectorAll("input[name='opt[]']");
+
+function performMark(keyword) { //added keyword if not using kb input
+
+  // Read the keyword
+  //var keyword = keywordInput.value;
+
+  
+  
+  // Determine selected options
+  
+  //var options = {"iframes":true};
+  //{firstName:"John", lastName:"Doe", age:46};
+  
+  /*
+  [].forEach.call(optionInputs, function(opt) {
+    options[opt.value] = opt.checked;
+  });
+  */
+
+  // Remove previous marked elements and mark
+  // the new keyword inside the context
+  markInstance.unmark({
+  	done: function(){
+    	//markInstance.mark(keyword, {"iframes": true , "separateWordSearch": false, "acrossElements": false });
+		markInstance.mark(keyword, {"separateWordSearch": false});
+    }
+  });
+};
+
+
+performMark("the");
+
+
+//keywordInput.addEventListener("input", performMark); //if use kb input
+
+/*
+// Listen to input and option changes
+keywordInput.addEventListener("input", performMark);
+for (var i = 0; i < optionInputs.length; i++) {
+  optionInputs[i].addEventListener("change", performMark);
+}
+*/
+
+</script>
+	    
+	  
+	  
+	  
+   </body>
+
+</html>
