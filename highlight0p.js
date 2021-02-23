@@ -4,6 +4,7 @@
 var doc1 = window.document; //used by ank1
 var OriginalBody; //save original so can restore
 
+window.parent.postMessage("IframeNavC", '*');
 
 //link click event        
 function doSomething(e) {
