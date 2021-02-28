@@ -35,11 +35,42 @@ function RestoreFunction() {
     if (OriginalBody != null) document.getElementsByTagName('body')[0].innerHTML = OriginalBody; //restore changes
 }
 
+function BookMjump(Bmark){ document.location.hash = Bmark; }
+
 
 //receive message from parent
 window.addEventListener("message", function (e) {
 
-    if (e.data == "RestoreFunction1") RestoreFunction(); else HighlightFunction(e.data);
+    //if (e.data == "RestoreFunction1") RestoreFunction(); else HighlightFunction(e.data);
     //alert(e.data+"6");
+	
+	var ss1=e.data;
+	var L1=ss1.length-1;
+	var s1=ss1.substr(0,1);
+	var s2=ss1.substr(1,L1);
+	
+
+	
+	switch (s1)
+	{
+		
+		case '0':
+		
+		HighlightFunction(s2);
+		break;
+		
+		case '1':
+		
+		RestoreFunction();
+		break;
+		
+		case '2':
+		
+		BookMjump(s2);
+		break;
+		
+	}
+	
+	
 
 }, false);
