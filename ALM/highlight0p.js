@@ -7,7 +7,7 @@ var OriginalBody; //save original so can restore
 window.parent.postMessage("IframeNavC", '*');
 
 //link click event        
-function doSomething(e) {
+function doSomething(e) { //not used anymore
     //console.log(this.value); // this will be the clicked element
 
     //performMark("the");
@@ -15,6 +15,10 @@ function doSomething(e) {
     location.href = e.target.href //jump to link
     //alert(e.target.href);
     //alert("1");
+
+		//<script src = "../highlight0p.js" ></script >
+		//<script src="../ank1.js"></script>
+
 }
 
 function HighlightFunction(SearchTerm) { //pass multiple param via string array? else use new function, file
@@ -37,6 +41,38 @@ function RestoreFunction() {
 
 function BookMjump(Bmark){ document.location.hash = Bmark; }
 
+
+window.addEventListener("pageshow", function (event) {
+
+	var historyTraversal = event.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2);
+
+	//console.log("pagenav");
+
+
+	if (historyTraversal) {
+
+		//console.log(document.URL);
+		window.parent.postMessage(document.URL, '*'); //send message to parent
+
+		//call c# below
+
+
+		// Handle page restore.
+		//window.location.reload();
+	}
+});
+
+
+//only working on subwindow because that is where change happens now, so put code on iframe and send results via window message
+window.addEventListener("hashchange", function (event) {
+
+
+	//console.log(location.hash);
+	window.parent.postMessage(location.hash, '*'); //send message to parent
+
+
+
+});
 
 //receive message from parent
 window.addEventListener("message", function (e) {
