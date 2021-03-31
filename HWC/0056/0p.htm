@@ -10,20 +10,28 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <meta name=Generator content="Microsoft Word 12">
 <meta name=Originator content="Microsoft Word 12">
 <link rel=File-List href="0p_files/filelist.xml">
-<!--[if gte mso 9]><xml>
+<link rel=Edit-Time-Data href="0p_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
  <o:DocumentProperties>
   <o:Author>Paul Way</o:Author>
-  <o:LastAuthor>Paul Way</o:LastAuthor>
-  <o:Revision>7</o:Revision>
-  <o:TotalTime>4</o:TotalTime>
-  <o:Created>2016-02-12T19:45:00Z</o:Created>
-  <o:LastSaved>2017-03-09T13:15:00Z</o:LastSaved>
-  <o:Pages>1</o:Pages>
-  <o:Words>163</o:Words>
-  <o:Characters>932</o:Characters>
-  <o:Lines>7</o:Lines>
-  <o:Paragraphs>2</o:Paragraphs>
-  <o:CharactersWithSpaces>1093</o:CharactersWithSpaces>
+  <o:LastAuthor>paulw</o:LastAuthor>
+  <o:Revision>9</o:Revision>
+  <o:TotalTime>27</o:TotalTime>
+  <o:Created>2016-02-12T20:05:00Z</o:Created>
+  <o:LastSaved>2017-02-05T17:25:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>909</o:Words>
+  <o:Characters>5187</o:Characters>
+  <o:Lines>43</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>6084</o:CharactersWithSpaces>
   <o:Version>12.00</o:Version>
  </o:DocumentProperties>
 </xml><![endif]-->
@@ -32,8 +40,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:Zoom>110</w:Zoom>
-  <w:SpellingState>Clean</w:SpellingState>
-  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:PunctuationKerning/>
@@ -48,7 +54,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
   <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
   <w:DoNotUnderlineInvalidXML/>
   <w:DoNotPromoteQF/>
-  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeOther>EN-GB</w:LidThemeOther>
   <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
   <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
   <w:DoNotShadeFormData/>
@@ -76,7 +82,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
   <m:mathPr>
    <m:mathFont m:val="Cambria Math"/>
    <m:brkBin m:val="before"/>
-   <m:brkBinSub m:val="--"/>
+   <m:brkBinSub m:val="&#45;-"/>
    <m:smallFrac m:val="off"/>
    <m:dispDef/>
    <m:lMargin m:val="0"/>
@@ -367,6 +373,13 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	mso-generic-font-family:swiss;
 	mso-font-pitch:variable;
 	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
 	{mso-style-unhide:no;
@@ -400,20 +413,30 @@ a:visited, span.MsoHyperlinkFollowed
 	color:purple;
 	text-decoration:underline;
 	text-underline:single;}
-p
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
 	{mso-style-noshow:yes;
 	mso-style-priority:99;
-	mso-margin-top-alt:auto;
-	margin-right:0cm;
-	mso-margin-bottom-alt:auto;
-	margin-left:0cm;
+	mso-style-link:"Balloon Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
 	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Times New Roman","serif";
-	mso-fareast-font-family:"Times New Roman";}
-span.GramE
-	{mso-style-name:"";
-	mso-gram-e:yes;}
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -432,19 +455,19 @@ span.GramE
  @page
 	{mso-page-border-surround-header:no;
 	mso-page-border-surround-footer:no;}
-@page Section1
+@page WordSection1
 	{size:612.0pt 792.0pt;
 	margin:72.0pt 72.0pt 72.0pt 72.0pt;
 	mso-header-margin:36.0pt;
 	mso-footer-margin:36.0pt;
 	mso-paper-source:0;}
-div.Section1
-	{page:Section1;}
+div.WordSection1
+	{page:WordSection1;}
  /* List Definitions */
  @list l0
 	{mso-list-id:-2;
 	mso-list-type:simple;
-	mso-list-template-ids:-730059036;}
+	mso-list-template-ids:-1774832364;}
 @list l0:level1
 	{mso-level-start-at:0;
 	mso-level-number-format:bullet;
@@ -502,159 +525,493 @@ ul
  </o:shapelayout></xml><![endif]-->
 </head>
 
-<body bgcolor="#FABF8F" background=paper004.gif lang=EN-US link=blue
+<body bgcolor="#FABF8F" background=paper004.gif lang=EN-GB link=blue
 vlink=purple style='tab-interval:36.0pt'>
 
-<div class=Section1>
+<div class=WordSection1>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;text-autospace:none'><a
-name=b0001></a><a href="#b0001"><span style='mso-bookmark:b0001'><span lang=EN-GB style='font-size:10.0pt;line-height:115%;
-font-family:"Courier New";mso-ansi-language:EN-GB;mso-bidi-font-weight:bold'>b0001</span></span></span><span
-style='mso-bookmark:b0001'></span></a><span style='font-size:10.0pt;line-height:
-115%;font-family:"Courier New";mso-ansi-language:EN-GB;mso-bidi-font-weight:
-bold'> <a name=p0001></a><a href="#p0001"><span style='mso-bookmark:p0001'><span
-lang=EN-GB>Home</span></span><span style='mso-bookmark:p0001'></span></a><span
-lang=EN-GB><o:p></o:p></span></span></p>
+name=b0001></a><a href="#b0001"><span style='mso-bookmark:b0001'><span
+style='font-size:10.0pt;line-height:115%;font-family:"Courier New";mso-bidi-font-weight:
+bold'>b0001</span></span><span style='mso-bookmark:b0001'></span></a><span
+lang=EN-US style='font-size:10.0pt;line-height:115%;font-family:"Courier New";
+mso-bidi-font-weight:bold'> </span><a name=p0001></a><a href="#p0001"><span
+style='mso-bookmark:p0001'><span style='font-size:10.0pt;line-height:115%;
+font-family:"Courier New";mso-bidi-font-weight:bold'>Home</span></span><span
+style='mso-bookmark:p0001'></span></a><span style='font-size:10.0pt;line-height:
+115%;font-family:"Courier New";mso-bidi-font-weight:bold'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
 margin-left:0cm;line-height:normal;mso-pagination:none;page-break-after:avoid;
-mso-layout-grid-align:none;text-autospace:none'><b><span lang=EN-GB
-style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
-EN-GB'><o:p>&nbsp;</o:p></span></b></p>
+mso-layout-grid-align:none;text-autospace:none'><b><span style='font-size:18.0pt;
+font-family:"Times New Roman","serif"'>Motor vehicle documentation, and learner driver requirements</span></b><sub><span style='font-size:8.0pt;font-family:
+"Courier New"'>(0001).</span></sub><b><span style='font-size:18.0pt;font-family:
+"Times New Roman","serif"'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
 margin-left:0cm;line-height:normal;mso-pagination:none;page-break-after:avoid;
-mso-layout-grid-align:none;text-autospace:none'><b><span lang=EN-GB
-style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
-EN-GB'>Parking on hills, 252</span></b><sub><span lang=EN-GB style='font-size:
-8.0pt;font-family:"Courier New";mso-ansi-language:EN-GB'>(0001).</span></sub><b><span
-lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman","serif";
-mso-ansi-language:EN-GB'><o:p></o:p></span></b></p>
+mso-layout-grid-align:none;text-autospace:none'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>Documents</span></b><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0002).</span></sub><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
 margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
-none;text-autospace:none'><span lang=EN-GB style='font-size:12.0pt;font-family:
-"Times New Roman","serif";mso-ansi-language:EN-GB'>If you park on a hill, you should<sub><span style='font-size:8.0pt;font-family:"Courier New"'>(</span></sub></span></span><sub><span
-lang=EN-GB style='font-size:8.0pt;font-family:"Courier New";mso-ansi-language:
-EN-GB'>0002).</span></sub><span lang=EN-GB style='font-size:12.0pt;font-family:
-"Times New Roman","serif";mso-ansi-language:EN-GB'><o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
-margin-left:36.0pt;text-indent:-18.0pt;line-height:normal;mso-pagination:none;
-mso-list:l0 level1 lfo2;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
-lang=EN-GB style='font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
-Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB'><span
-style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-GB
-style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
-EN-GB'>park close to the kerb, and apply the handbrake firmly</span><sub><span lang=EN-GB style='font-size:8.0pt;
-font-family:"Courier New";mso-ansi-language:EN-GB'>(0003).</span></sub><span
-lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman","serif";
-mso-ansi-language:EN-GB'> <o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
-margin-left:36.0pt;text-indent:-18.0pt;line-height:normal;mso-pagination:none;
-mso-list:l0 level1 lfo2;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
-lang=EN-GB style='font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
-Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB'><span
-style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-GB
-style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
-EN-GB'>select a forward gear, and turn your steering wheel away from the kerb, when facing uphill</span><sub><span
-lang=EN-GB style='font-size:8.0pt;font-family:"Courier New";mso-ansi-language:
-EN-GB'>(0004).</span></sub><span lang=EN-GB style='font-size:12.0pt;font-family:
-"Times New Roman","serif";mso-ansi-language:EN-GB'> <o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
-margin-left:36.0pt;text-indent:-18.0pt;line-height:normal;mso-pagination:none;
-mso-list:l0 level1 lfo2;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
-lang=EN-GB style='font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
-Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB'><span
-style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-GB
-style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
-EN-GB'>select reverse gear, and turn your steering wheel towards the kerb, when facing downhill</span><sub><span
-lang=EN-GB style='font-size:8.0pt;font-family:"Courier New";mso-ansi-language:
-EN-GB'>(0005).</span></sub><span lang=EN-GB style='font-size:12.0pt;font-family:
-"Times New Roman","serif";mso-ansi-language:EN-GB'> <o:p></o:p></span></p>
-
-<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
-margin-left:36.0pt;text-indent:-18.0pt;line-height:normal;mso-pagination:none;
-mso-list:l0 level1 lfo2;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
-lang=EN-GB style='font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
-Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN-GB'><span
-style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span lang=EN-GB
-style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
-EN-GB'>use park if your car has an automatic gearbox</span><sub><span lang=EN-GB style='font-size:8.0pt;
-font-family:"Courier New";mso-ansi-language:EN-GB'>(0006).</span></sub><span
-lang=EN-GB style='font-size:12.0pt;font-family:"Times New Roman","serif";
-mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Driving licence_</span></b><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0003).</span></sub><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> </span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
 margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
-none;text-autospace:none'><span lang=EN-GB style='font-size:12.0pt;font-family:
-"Times New Roman","serif";mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
-margin-left:0cm;line-height:normal;mso-pagination:none;page-break-after:avoid;
-mso-layout-grid-align:none;text-autospace:none'><b><span lang=EN-GB
-style='font-size:14.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
-EN-GB'><o:p>&nbsp;</o:p></span></b></p>
-
-<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
-margin-left:0cm;line-height:normal;mso-pagination:none;page-break-after:avoid;
-mso-layout-grid-align:none;text-autospace:none'><a name=b0002></a><b><span
-lang=EN-GB style='font-size:14.0pt;font-family:"Times New Roman","serif";
-mso-ansi-language:EN-GB'><a href="#b0002">b0002</a><o:p></o:p></span></b></p>
-
-<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
-margin-left:0cm;line-height:normal;mso-pagination:none;page-break-after:avoid;
-mso-layout-grid-align:none;text-autospace:none'><b><span lang=EN-GB
-style='font-size:14.0pt;font-family:"Times New Roman","serif";mso-ansi-language:
-EN-GB'>Decriminalised Parking Enforcement (DPE)----</span></span></b><sub><span
-lang=EN-GB style='font-size:8.0pt;font-family:"Courier New";mso-ansi-language:
-EN-GB'>(0007).</span></sub><b><span lang=EN-GB style='font-size:14.0pt;
-font-family:"Times New Roman","serif";mso-ansi-language:EN-GB'><o:p></o:p></span></b></p>
+none;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><b>You MUST have</b> a valid driving licence, for the category of motor vehicle you are driving</span><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0004).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><b> You MUST inform</b> the Driver, and Vehicle Licensing Agency {DVLA} if you change your name and, or address</span><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0005).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
 margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
-none;text-autospace:none'><span lang=EN-GB style='font-size:12.0pt;font-family:
-"Times New Roman","serif";mso-ansi-language:EN-GB'>DPE is becoming increasingly common, as more authorities take on this role<sub><span
-style='font-size:8.0pt;font-family:"Courier New"'>(</span></sub></span></span><sub><span
-lang=EN-GB style='font-size:8.0pt;font-family:"Courier New";mso-ansi-language:
-EN-GB'>0008).</span></sub><span lang=EN-GB style='font-size:12.0pt;font-family:
-"Times New Roman","serif";mso-ansi-language:EN-GB'> The local traffic authority assumes responsibility for enforcing many parking contraventions, in place of the police<sub><span style='font-size:8.0pt;font-family:"Courier New"'>(</span></sub></span></span><sub><span
-lang=EN-GB style='font-size:8.0pt;font-family:"Courier New";mso-ansi-language:
-EN-GB'>0009).</span></sub><span lang=EN-GB style='font-size:12.0pt;font-family:
-"Times New Roman","serif";mso-ansi-language:EN-GB'> Further details on DPE may be found at the following websites:</span></span><sub><span
-lang=EN-GB style='font-size:8.0pt;font-family:"Courier New";mso-ansi-language:
-EN-GB'>(0010).</span></sub><span lang=EN-GB style='font-size:12.0pt;font-family:
-"Times New Roman","serif";mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+none;text-autospace:none'><span style='font-size:9.5pt;font-family:"Courier New";
+mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1035" type="#_x0000_t75"
+ style='width:144.6pt;height:11.4pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="0p_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=193 height=15
+src="0p_files/image023.jpg" v:shapes="Picture_x0020_1"><![endif]></span><span
+style='font-size:9.5pt;font-family:"Courier New"'>Law </span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0006).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
 
-<p><span lang=EN style='mso-ansi-language:EN'><a
-href="http://www.trafficpenaltytribunal.gov.uk/" target="_blank">Traffic Penalty Tribunal</a> (outside London)</span><br>
-<a href="http://www.londontribunals.gov.uk/" target="_blank">London Tribunals</a>
-(inside London) <o:p></o:p></span></p>
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Holders of non-European Community licences, who are now resident in the UK, may only drive on that licence for a maximum of 12 months, from the date they become resident in this country</span><sub><span style='font-size:8.0pt;font-family:
+"Courier New"'>(0007).</span></sub><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'> To ensure continuous driving entitlement</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0008).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:normal;mso-pagination:none;
+mso-list:l0 level1 lfo2;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+style='font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>a British provisional licence should be obtained, and a driving test{s} passed before the 12-month period elapses, or</span><sub><span style='font-size:8.0pt;font-family:
+"Courier New"'>(0009).</span></sub><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:normal;mso-pagination:none;
+mso-list:l0 level1 lfo2;mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+style='font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'>in the case of a driver who holds a licence from a country, which has been designated in law, for licence exchange purposes, the driver should exchange the licence for a British one</span><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0010).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><a name=b0002></a><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><a href="#b0002">b0002</a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>M-O-T</span></b><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0011).</span></sub><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> </span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Cars, and motorcycles <b>MUST_</b> normally pass an MOT test three years from the date of the first registration, and every year after that</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0012).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><b> You MUST NOT drive_</b> a motor vehicle, without an MOT certificate when it should have one</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0013).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> Exceptionally, you may drive to a pre-arranged test appointment, or to a garage for repairs required for the test</span><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0014).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> Driving an unroadworthy motor vehicle, may invalidate your insurance</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0015).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:9.5pt;font-family:"Courier New";
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_2" o:spid="_x0000_i1034"
+ type="#_x0000_t75" style='width:164.4pt;height:12.6pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="0p_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=219 height=17
+src="0p_files/image024.jpg" v:shapes="Picture_x0020_2"><![endif]></span><span
+style='font-size:9.5pt;font-family:"Courier New"'>Law </span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0016).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><a name=b0003></a><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><a href="#b0003">b0003</a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Insurance_</span></b><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0017).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>To use a motor vehicle on the road, <b>you MUST have</b> a valid insurance policy</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0018).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><b> This MUST at least</b> cover you for injury, or damage to a third party, while using that motor vehicle</span><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0019).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> Before driving any motor vehicle, make sure that it has this cover for your use, or that your own insurance provides adequate cover</span><sub><span style='font-size:8.0pt;
+font-family:"Courier New"'>(0020).</span></sub><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><b> You MUST NOT drive</b> a motor vehicle without insurance</span><sub><span style='font-size:8.0pt;font-family:
+"Courier New"'>(0021).</span></sub><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'> Also, be aware that even if a road traffic incident is not your fault, you may still be held liable by insurance companies</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0022).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:9.5pt;font-family:"Courier New";
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_3" o:spid="_x0000_i1033"
+ type="#_x0000_t75" style='width:109.8pt;height:12pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="0p_files/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=146 height=16
+src="0p_files/image025.jpg" v:shapes="Picture_x0020_3"><![endif]></span><span
+style='font-size:9.5pt;font-family:"Courier New"'>Law </span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0023).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Uninsured drivers can now be automatically detected by roadside cameras</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0024).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> Further to the penalties for uninsured driving listed in Penalties, an offenders vehicle can now be seized by the Police, taken away, and crushed</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0025).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:9.5pt;font-family:"Courier New";
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_4" o:spid="_x0000_i1032"
+ type="#_x0000_t75" style='width:157.2pt;height:12.6pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="0p_files/image007.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=210 height=17
+src="0p_files/image026.jpg" v:shapes="Picture_x0020_4"><![endif]></span><span
+style='font-size:9.5pt;font-family:"Courier New"'>Law </span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0026).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>The types of cover available are indicated below:</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0027).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Third-party insurance</span></b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+- this is often the cheapest form of insurance, and is the minimum cover required by law</span><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0028).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> It covers anyone you might injure, or whose property you might damage</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0029).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> It does not cover damage to your own motor vehicle, or injury to yourself</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0030).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Third-party, Fire, and Theft insurance</span></b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'> - similar to third-party, but also covers you against your motor vehicle being stolen, or damaged by fire</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0031).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><a name=b0004></a><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><a href="#b0004">b0004</a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Comprehensive insurance</span></b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>
+- this is the most expensive but the best insurance</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0032).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> Apart from covering other persons, and property against injury, or damage, it also covers damage to your own motor vehicle, up to the market value of that vehicle, and personal injury to yourself</span><sub><span style='font-size:8.0pt;font-family:
+"Courier New"'>(0033).</span></sub><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Registration certificate</span></b><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0034).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Registration certificates {also called harmonised registration certificates} are issued for all motor vehicles used on the road, describing them {make, model, etc}, and giving details of the registered keeper</span><sub><span style='font-size:8.0pt;
+font-family:"Courier New"'>(0035).</span></sub><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><b> You MUST notify</b> the Driver, and Vehicle Licensing Agency, in Swansea, as soon as possible when you buy, or sell a motor vehicle, or if you change your name, or address</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0036).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> For registration certificates issued after 27 March 1997, the buyer, and seller are responsible for completing the registration certificates</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0037).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> The seller is responsible for forwarding them to DVLA</span><sub><span style='font-size:8.0pt;
+font-family:"Courier New"'>(0038).</span></sub><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'> The procedures are explained on the back of the registration certificates</span><sub><span style='font-size:8.0pt;
+font-family:"Courier New"'>(0039).</span></sub><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:9.5pt;font-family:"Courier New";
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_5" o:spid="_x0000_i1031"
+ type="#_x0000_t75" style='width:162pt;height:12pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="0p_files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=216 height=16
+src="0p_files/image027.jpg" v:shapes="Picture_x0020_5"><![endif]></span><span
+style='font-size:9.5pt;font-family:"Courier New"'>Law </span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0040).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><a name=b0005></a><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><a href="#b0005">b0005</a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Vehicle Excise Duty {VED} </span></b><sub><span style='font-size:8.0pt;font-family:
+"Courier New"'>(0041).</span></sub><b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif"'> </span></b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span lang=EN style='font-size:12.0pt;font-family:
+"Times New Roman","serif";mso-ansi-language:EN'>Vehicle Excise Duty <strong>MUST be paid</strong>  on all motor vehicles used or kept on public roads</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0042).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> See <a
+href="https://www.gov.uk/vehicle-tax-rate-tables/vehicles-registered-on-or-after-1-april-2017"
+target="_blank">Vehicle tax rate tables</a></span><sub><span style='font-size:
+8.0pt;font-family:"Courier New"'>(0043).</span></sub><span style='font-size:
+12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:9.5pt;font-family:"Courier New";
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_6" o:spid="_x0000_i1030"
+ type="#_x0000_t75" style='width:123.6pt;height:12pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="0p_files/image011.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=165 height=16
+src="0p_files/image028.jpg" v:shapes="Picture_x0020_6"><![endif]></span><span
+style='font-size:9.5pt;font-family:"Courier New"'>Law </span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0044).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Statutory Off-Road Notification {SORN} -- </span></b><sub><span style='font-size:8.0pt;
+font-family:"Courier New"'>(0045).</span></sub><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'> </span></b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>This is a notification to the DVLA that a motor vehicle is not being used on the road</span><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0046).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> If you are the vehicle keeper, and want to keep a motor vehicle untaxed, and off the public road you <b>MUST declare SORN</b>  - it is an offence not to do so</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0047).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> You then wont have to pay any road tax for that vehicle for a period of 12 months</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0048).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> You need to send a further declaration after that period if the vehicle is still off the public road</span><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0049).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> The SORN will end if you sell the vehicle, and the new owner will become immediately responsible</span><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0050).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:9.5pt;font-family:"Courier New";
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_7" o:spid="_x0000_i1029"
+ type="#_x0000_t75" style='width:157.2pt;height:12pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="0p_files/image013.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=210 height=16
+src="0p_files/image029.jpg" v:shapes="Picture_x0020_7"><![endif]></span><span
+style='font-size:9.5pt;font-family:"Courier New"'>Law </span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0051).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><a name=b0006></a><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><a href="#b0006">b0006</a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Production of documents</span></b><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0052).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><b>You MUST be able to produce</b> your driving licence, a valid insurance certificate, and {if appropriate} a valid MOT certificate, when requested by a police officer</span><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0053).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> If you cannot do this, you may be asked to take them to a police station within seven days</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0054).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:9.5pt;font-family:"Courier New";
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_8" o:spid="_x0000_i1028"
+ type="#_x0000_t75" style='width:141.6pt;height:13.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="0p_files/image015.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=189 height=18
+src="0p_files/image030.jpg" v:shapes="Picture_x0020_8"><![endif]></span><span
+style='font-size:9.5pt;font-family:"Courier New"'>Law </span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0055).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;page-break-after:avoid;
+mso-layout-grid-align:none;text-autospace:none'><b><span style='font-size:14.0pt;
+font-family:"Times New Roman","serif"'>Learner drivers</span></b><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0056).</span></sub><b><span
+style='font-size:14.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Learners driving a car <b>MUST hold</b> a valid provisional licence</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0057).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><b> They MUST be</b> supervised by someone at least 21 years, old who holds a full EC-EEA licence for that type of car {automatic, or manual}, and has held one for at least three years</span><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0058).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:9.5pt;font-family:"Courier New";
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_9" o:spid="_x0000_i1027"
+ type="#_x0000_t75" style='width:188.4pt;height:12pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="0p_files/image017.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=251 height=16
+src="0p_files/image031.jpg" v:shapes="Picture_x0020_9"><![endif]></span><span
+style='font-size:9.5pt;font-family:"Courier New"'>Law </span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0059).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><a name=b0007></a><b><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif"'><a href="#b0007">b0007</a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Vehicles_</span></b><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0060).</span></sub><b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> </span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'>Any vehicle driven by a learner, <b>MUST display</b> red L plates_</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0061).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> In Wales, either red D plates, red L plates, or both, can be used</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0062).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><b> Plates MUST</b>
+conform to legal specifications, <b>and MUST be</b> clearly visible to others, from in front of the vehicle, and from behind</span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0063).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'> Plates should be removed, or covered when not being driven by a learner {except on driving school vehicles}</span><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0064).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:9.5pt;font-family:"Courier New";
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_10" o:spid="_x0000_i1026"
+ type="#_x0000_t75" style='width:142.8pt;height:12.6pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="0p_files/image019.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=190 height=17
+src="0p_files/image032.jpg" v:shapes="Picture_x0020_10"><![endif]></span><span
+style='font-size:9.5pt;font-family:"Courier New"'>Law </span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0065).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:12.0pt;font-family:"Times New Roman","serif"'><b>You MUST pass</b> the theory test {if one is required}, and then a practical driving test, for the category of vehicle, you wish to drive, before driving unaccompanied</span><sub><span style='font-size:8.0pt;font-family:"Courier New"'>(0066).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;
+margin-left:0cm;line-height:normal;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:9.5pt;font-family:"Courier New";
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_11" o:spid="_x0000_i1025"
+ type="#_x0000_t75" style='width:97.2pt;height:10.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="0p_files/image021.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=130 height=14
+src="0p_files/image033.jpg" v:shapes="Picture_x0020_11"><![endif]></span><span
+style='font-size:9.5pt;font-family:"Courier New"'>Law </span><sub><span
+style='font-size:8.0pt;font-family:"Courier New"'>(0067).</span></sub><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif"'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-autospace:none'><span lang=EN-GB style='font-size:10.0pt;line-height:115%;
-font-family:"Courier New";mso-ansi-language:EN-GB'><o:p>&nbsp;</o:p></span></p>
+text-autospace:none'><span style='font-size:9.5pt;line-height:115%;font-family:
+"Courier New"'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-autospace:none'><span lang=EN-GB style='font-size:10.0pt;line-height:115%;
-font-family:"Courier New";mso-ansi-language:EN-GB'><a href="#b0001">Top</a> <a
-href="#p9999">Next</a></span><span lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+text-autospace:none'><span style='font-size:10.0pt;line-height:115%;font-family:
+"Courier New"'><a href="#b0001">Top</a> <a href="#p9999">Next</a></span><o:p></o:p></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-autospace:none'><span lang=EN-GB style='font-size:9.5pt;line-height:115%;
-font-family:"Courier New";mso-ansi-language:EN-GB'><u1:p></u1:p>.....</span><span
-lang=EN-GB style='mso-ansi-language:EN-GB'><o:p></o:p></span></p>
+text-autospace:none'><span style='font-size:9.5pt;line-height:115%;font-family:
+"Courier New"'><u1:p></u1:p>.....</span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
-lang=EN-GB style='mso-ansi-language:EN-GB'>&nbsp;<o:p></o:p></span></p>
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>&nbsp;</p>
 
 </div>
 
 </body><script src="../highlight0p.js"></script>
+
 </html>
